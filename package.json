@@ -1,0 +1,19 @@
+{
+  "name": "notas",
+  "version": "1.0.0",
+  "description": "Curso de emascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JOSE-731/ECMAScript-6.git"
+  },
+  "author": "Jose Diaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JOSE-731/ECMAScript-6/issues"
+  },
+  "homepage": "https://github.com/JOSE-731/ECMAScript-6#readme"
+}
