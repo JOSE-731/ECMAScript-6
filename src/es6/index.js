@@ -103,3 +103,31 @@ const promesa = () => {
 promesa()
     .then( respuesta => console.log(respuesta) ) //En caso que se ejecute resolve
     .catch( error => console.log(error) ) //En caso que se ejecute reject
+    
+
+//Clase
+
+class calculadora{
+    //Declaramos las variables
+    contructor(){
+        this.valueA = 0;
+        this.valueB = 0;
+    }
+
+    //Inicializamos
+    sum(valueA, valueB){
+        this.valueA = valueA;
+        this.valueB = valueB;
+
+        return valueA + valueB;
+    }
+}
+
+const calc = new calculadora();
+console.log(calc.sum(2, 894))
+
+
+//Llamar modulo
+const saludo = require('./module')
+
+console.log(saludo())
