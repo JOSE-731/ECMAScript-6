@@ -64,3 +64,55 @@ if(user?.profile?.email) {
 } else{
     console.log('fail')
 }
+
+
+//2021
+const mensaje = "JavaScript es maravilloso, con JavaScript puedo crear el futuro de la web."
+
+mensaje.replace("JavaScript", "Python")
+// 'Python es maravilloso, con JavaScript puedo crear el futuro de la web.'
+
+mensaje.replaceAll("JavaScript", "Python")
+// 'Python es maravilloso, con Python puedo crear el futuro de la web.'
+
+mensaje.replaceAll(/a/g, "*")
+// 'J*v*Script es m*r*villoso, con J*v*Script puedo cre*r el futuro de l* web.'
+
+class Clase {
+    #private(valor){
+      console.log(valor)
+    }
+    
+    public(valor){
+      console.log(valor)
+    }
+  }
+  
+  const clase = new Clase()
+  clase.public("Hola")  // 'Hola'
+  clase.private("Hola") // TypeError: clase.private is not a function
+
+  const promesa1 = Promise.reject("Ups promesa 1 falló")
+const promesa2 = Promise.reject("Ups promesa 2 falló")
+const promesa3 = Promise.resolve("Promesa 3")
+
+
+Promise.any([promesa1, promesa2, promesa3])
+    .then(respuesta => console.log(respuesta)) // Promise 3
+    .catch(error => console.log(error))
+
+
+    // Asignación AND
+let saludo1 = true
+saludo ??= "Hola"
+console.log(saludo1) // "Hola"
+
+// Asignación OR
+let saludo2 = true
+saludo ||= "Hola"
+console.log(saludo2) // true
+
+// Asignación Nullish
+let saludo = undefined
+saludo ??= "Hola"
+console.log(saludo) // "Hola"
